@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family:'Courier Prime', monospace;
+  }
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+    overflow: hidden;
+    
+}
+.container{
+    z-index: 12;
+    width: 350px;
+    height:500px;
+    padding:15px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.1),
+    10px 10px 70px rgba(0, 0, 0, 0.1),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset 5px 5px 20px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.1);
+    
+}
+.container input[type="text"]{
+    height: 60px;
+    width: 300px;
+    margin-top: 40px;
+    outline:none;
+    border:none;
+    color:#fff;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 20px;
+    background: transparent;
+}
+.container input[type="button"]{
+    height:50px;
+    color:rgba(17, 17, 17, 0.678);
+    width: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #eaeef0;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 5px solid #eaeef0;
+    border-radius: 50%;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, .3),
+                8px 8px 15px rgba(0, 0, 0, 0.2),
+                inset 3px 3px 5px rgba(0, 0, 0, 0.1),
+                inset -1px -1px 5px rgba(255, 255, 255, 1);
+}
+.container input[type="button"]:hover{
+    transition: .5s;
+    background: rgba(255,255,255,0.1);
+    color:#fff;
+}
+#equal:hover{
+    background: #00ff85;
+}
+#clear:hover{
+    background: #e90052;
+}
+#display{
+    background: #2196f3;
+    color:#fff;
+    z-index: 12;
+    border-radius: 12px;
+    position: relative;
+    margin:0px 0px; 
+    width:268px;
+    height:55px;
+    margin-top: 28px;
+    transition: transform 2s,background-color 2s;
+}
+#display:hover{
+    transform: rotateX(90deg); 
+    transform-style: preserve-3d;
+    background-color: rgba(255,255,255,0.1);
+}
+p{
+    color:rgba(0, 0, 0, 0.25);
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+#backlit{
+    background: #2195f309;
+    color:#fff;
+    z-index: 11;
+    border-radius: 12px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0),
+    8px 8px 15px rgba(0, 0, 0, 0),
+    inset 3px 3px 5px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 5px rgba(255, 255, 255, 1);
+    position: absolute;
+    margin:25px -269px; 
+    width:270px;
+}
+  

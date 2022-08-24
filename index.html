@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" name="forms">
+        <input
+          type="text"
+          id="display"
+          name="display"
+          disabled
+          placeholder="ENTER NUMBERS"
+        />
+        <input type="text" id="backlit" name="backlit" />
+        <p>Hower to turn off display!</p>
+        <div class="buttons">
+          <input type="button" id="clear" value="AC" style="margin-top: 25px" />
+          <input type="button" id="lb" value="(" />
+          <input type="button" id="rb" value=")" />
+          <input type="button" id="divide" value="÷" />
+          <br />
+          <input type="button" id="seven" value="7" />
+          <input type="button" id="eight" value="8" />
+          <input type="button" id="nine" value="9" />
+          <input type="button" id="multiply" value="×" />
+          <br />
+          <input type="button" id="four" value="4" />
+          <input type="button" id="five" value="5" />
+          <input type="button" id="six" value="6" />
+          <input type="button" id="subtract" value="-" />
+          <br />
+          <input type="button" id="one" value="1" />
+          <input type="button" id="two" value="2" />
+          <input type="button" id="three" value="3" />
+          <input type="button" id="addition" value="+" />
+          <br />
+          <input type="button" id="modulus" value="%" />
+          <input type="button" id="zero" value="0" />
+          <input type="button" id="float" value="." />
+          <input type="button" id="equal" value="=" />
+          <br />
+        </div>
+      </form>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#one").click(function () {
+          document.forms.display.value += 1;
+        });
+        $("#two").click(function () {
+          document.forms.display.value += 2;
+        });
+        $("#three").click(function () {
+          document.forms.display.value += 3;
+        });
+        $("#four").click(function () {
+          document.forms.display.value += 4;
+        });
+        $("#five").click(function () {
+          document.forms.display.value += 5;
+        });
+        $("#six").click(function () {
+          document.forms.display.value += 6;
+        });
+        $("#seven").click(function () {
+          document.forms.display.value += 7;
+        });
+        $("#eight").click(function () {
+          document.forms.display.value += 8;
+        });
+        $("#nine").click(function () {
+          document.forms.display.value += 9;
+        });
+        $("#zero").click(function () {
+          document.forms.display.value += 0;
+        });
+        $("#modulus").click(function () {
+          document.forms.display.value += "%";
+        });
+        $("#addition").click(function () {
+          document.forms.display.value += "+";
+        });
+        $("#subtract").click(function () {
+          document.forms.display.value += "-";
+        });
+        $("#multiply").click(function () {
+          document.forms.display.value += "*";
+        });
+        $("#divide").click(function () {
+          document.forms.display.value += "/";
+        });
+        $("#float").click(function () {
+          document.forms.display.value += ".";
+        });
+        $("#lb").click(function () {
+          document.forms.display.value += "(";
+        });
+        $("#rb").click(function () {
+          document.forms.display.value += ")";
+        });
+        $("#equal").click(function () {
+          if (display.value == "") {
+            alert("Please enter any numbers to calculate!");
+          } else {
+            document.forms.display.value = eval(document.forms.display.value);
+          }
+        });
+        $("#clear").click(function () {
+          document.forms.display.value = "";
+        });
+      });
+    </script>
+  </body>
+</html>
